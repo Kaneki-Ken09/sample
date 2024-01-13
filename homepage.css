@@ -1,0 +1,1116 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&family=Vina+Sans&display=swap');
+
+
+:root{
+  --color-default:  black;
+  --color-second:#14213d;
+  --color-white: white ;
+  --color-body:#c17c0d;
+  --color-light:#e0e0e0;
+}
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+background-color: var(--color-second);
+}
+
+#homepagelogo{
+  max-width: 100%;
+  width: 20%;
+}
+
+footer{
+  background-color: var(--color-body) ;
+  padding: 1px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: var(--color-body);
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: var(--color-light);
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: var(--color-light);
+}
+
+.nav > .nav-links > a:hover {
+ color: var(--color-second);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+
+  .nav {
+    height: 50px;
+    width: 111%;
+    background-color: var(--color-body);
+    position: relative;
+  }
+  
+
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: var(--color-second);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+.hpimgCon{
+  width: 80%; 
+  margin: 0 auto; 
+  position: relative; 
+}
+
+#homepagepic{
+  position: absolute; 
+  top: 0;
+  right: 0; 
+  max-width: 40%;
+  height: auto; 
+}
+
+#hptxt{
+  color: var(--color-body);
+  font-family: 'Teko', sans-serif;
+  font-size: 75px;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+#contactLog{
+  font-size: clamp(0.9375rem, 0.1563rem + 2.5vw, 1.5625rem);
+  color: var(--color-second);
+  margin-right: 1%;
+  margin-left: 45px;
+  font-weight: bold;
+}
+
+h1{
+  font-family:sans-serif;
+  font-style: bold;
+}
+
+
+.hobbiestop{
+  margin-left: 30%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+#hobbiesTop{
+  font-size: 30px;
+  margin-right: 30px;
+  text-align: center;
+  font-style: italic;
+  color: var(--color-body);
+  width: 50%;
+ 
+}
+
+#schl{
+  color: var(--color-second);
+  font-weight: bold;
+  font-family: 'Teko', sans-serif;
+  margin-left: 2%;
+  
+}
+
+#schl:hover{
+  text-decoration: underline;
+}
+
+#logRes{
+  width: 100%;
+  max-width: 120px;
+  margin-top: 2%;
+  text-align: center;
+  margin-left: 38%;
+  border-radius: 50%;
+}
+
+
+#column{
+  padding-left:20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 70%;
+   margin-left: 15%;
+}
+
+
+#Schltxt{
+  color: var(--color-body);
+  font-family: 'Teko', sans-serif;
+  text-align: left;
+  font-size: clamp(0.9375rem, -0.625rem + 5vw, 2.1875rem);
+  margin-bottom: 0;
+}
+
+.title{
+  color: var(--color-second);
+  width: 100%;
+  margin-left: 2%;
+}
+
+#desElem{
+  text-align: center;
+  color: var(--color-light);
+  width: 100%;
+  
+}
+
+#schlCard{
+  max-width: 100%;
+  width: 100%;
+  height: 300px;
+  background-color: var(--color-body);
+  border-width: 2px;
+  border-radius: 25px;
+  margin-bottom: 8%;
+  }
+
+#ytvid{
+  margin-left: 3%;
+  margin-bottom: 2%;
+  border: 5px solid white;
+  border-radius: 15px;
+}
+
+
+#dancevid{
+  border: 3px solid white;
+  margin-bottom: 70px;
+  margin-top: 20px;
+  margin-left: 300px;
+  max-width: 100%; 
+  width: 60%;
+}
+
+#dancevid{
+  width: 100;
+  height: auto;
+}
+
+#danceDes{
+ font-size: 30px;
+ text-align: center;
+ margin-right: 40px;
+ color: var(--color-body);
+}
+
+#danceDes2{
+  font-size: 20px;
+  margin-right: 40px;
+  text-align: center;
+  font-style: italic;
+  color: var(--color-body);
+ }
+
+.goalsImg{
+display: flex;
+flex-direction: row;
+margin-left: 15%;
+
+}
+
+.goalsImg img{
+ margin: 5px;
+}
+
+
+#goalsdes{
+  color: var(--color-body);
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 35px;
+  width: 100%;
+  font-weight: bold;
+  
+}
+
+#contactscont{
+  margin-left: 500px;
+}
+
+#contactsLog{
+  color: var(--color-body);
+  text-align: center;
+  padding-top: 5%;
+  font-size: 100px;
+  margin-bottom: 50px;
+  transition: transform 0.5s ease-in-out;
+}
+
+#contactsLog:hover{
+  transform: scale(1.1);
+}
+  
+/* for responsiveness*/
+@media only screen and (max-width: 768px) {
+
+body {
+        transition: all 0.5s ease; /* Adjust the duration and timing function as needed */
+      }
+
+      .nav {
+        height: 50px;
+        width: 100%;
+        background-color: var(--color-body);
+        position: relative;
+      }
+
+      
+.nav > .nav-links > a:hover {
+  color: var(--color-body);
+ }
+
+      #hptxt{
+        font-family: 'Courier New', Courier, monospace;
+        max-width: 50%;
+        width: 20%;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 300px;
+        
+      }
+  
+      .hpimgCon{
+        width: 100%; 
+        margin: 0 auto; 
+        
+      }
+      
+      #homepagepic{
+        top: 0;
+        right: 0; 
+        max-width: 100%;
+        height: auto; 
+      }
+
+      #hobbiesTop{
+        font-size: 15px;
+       width: 70%;
+       }
+
+       #ytvid{
+        margin-left: 7%;
+        margin-bottom: 2%;
+        border: 5px solid white;
+        border-radius: 15px;
+      }
+
+      #dancevid{
+        border: 3px solid white;
+        margin-bottom: 70px;
+        margin-top: 20px;
+        margin-left: 100px;
+        max-width: 100%; 
+        width: 60%;
+      }
+      
+      #danceDes{
+       font-size: 30px;
+       text-align: center;
+       margin-left: 10% ;
+       color: var(--color-body);
+      }
+      
+      #danceDes2{
+        font-size: 15px;
+        width: 70%;
+        margin-left: 15%;
+        text-align: center;
+        font-style: italic;
+        color: var(--color-body);
+       }
+
+       #Schltxt{
+        color: var(--color-body);
+        font-family: 'Teko', sans-serif;
+        text-align: left;
+        font-size: clamp(0.9375rem, -0.625rem + 5vw, 2.1875rem);
+        margin-bottom: 0;
+      }
+      
+      .title{
+        color: var(--color-second);
+        width: 100%;
+        margin-left: 2%;
+      }
+      
+      #desElem{
+        text-align: center;
+        color: var(--color-light);
+        width: 100%;
+        font-size: 70%;
+        
+      }
+      
+      #schlCard{
+        max-width: 100%;
+        width: 100%;
+        height: 400px;
+        background-color: var(--color-body);
+        border-width: 2px;
+        border-radius: 25px;
+        margin-bottom: 8%;
+        }
+
+        .goalsImg{
+          display: flex;
+          flex-direction: column;
+          margin-left: 0%;
+          
+          }
+          
+          .goalsImg img{
+           margin: 5px;
+          }
+          
+          
+          #goalsdes{
+            color: var(--color-body);
+            text-align: center;
+            font-family: 'Teko', sans-serif;
+            font-size: 30px;
+            width: 100%;
+            font-weight: bold;
+            margin-bottom: 5%;
+            
+          }
+          
+  }
+
+
+/* Portrait for iphonexr*/
+@media only screen 
+  and (max-width: 480px)  { 
+
+    .nav {
+      height: 50px;
+      width: 135%;
+      background-color: var(--color-body);
+      position: relative;
+    }
+
+    #hptxt{
+      font-family: 'Courier New', Courier, monospace;
+      max-width: 100%;
+      width: 100%;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 100px;
+      margin-left: 20%;
+      
+    }
+
+    .hpimgCon{
+      width: 100%; 
+      margin: 0 auto;
+      margin-left: 15%; 
+      
+    }
+    
+    #homepagepic{
+      top: 300px;
+      right: 0; 
+      max-width: 100%;
+      height: auto; 
+    }
+
+
+ #Schltxt{
+  text-align: justify;
+  font-size: 30px;
+  width: 250%;
+  padding-right: 8px;
+ }
+
+ #schl{
+  font-size: 150%;  
+ }
+
+
+
+ #contactLog{
+  font-size: 15 px;
+}
+
+
+     #schlCard{
+      background-color: var(--color-body);
+      margin-left: 10px;
+      
+    }
+
+    #column{
+      padding-left:20px;
+      display: flex;
+      flex-direction: column;
+      width: 37rem;
+    }
+    
+
+    #desElem{
+      font-size: 90%;
+    }
+
+    .containerYT{
+        display: flex;
+        flex-direction: column;
+     }
+
+     #logRes{
+      margin-top: 5px; 
+      margin-left: 3%;
+     }
+
+     #logRes2{
+      margin-top: 5px; 
+      margin-left: 3%;
+     }
+
+     #hobbiesTop{
+      font-size: 20px;
+     width: 100%;
+   
+     }
+
+     #ytvid{
+      width: 470px;
+      margin-left: 45px;
+      margin-bottom: 30px;
+     }
+
+     #danceDes{
+      width: 100%;
+     margin-left: 15%;
+     font-size: 40px;
+     }
+
+     #danceDes2{
+      width: 100%;
+      margin-left: 15%;
+     }
+
+     #dancevid{
+      margin: 0;
+      margin-top: 20px;
+      margin-left: 80px;
+      margin-bottom: 70px;
+      width: 100%;
+     }
+
+    .goalsImg{
+      display: flex;
+      flex-direction: column;
+      margin-left: 23%;
+      
+      }
+      
+      .goalsImg img{
+       margin: 5px;
+      }
+      
+    #goalsdes{
+      color: var(--color-body);
+      text-align: justify;
+      font-family: 'roboto', sans-serif;
+      font-size: 25px;
+      width: 100%;
+      margin-left: 15%;
+      margin-right: 0;
+    }
+
+
+    
+
+    #contactsLog{
+      color: var(--color-body);
+      text-align: center;
+      padding-top: 5%;
+      font-size: 100px;
+      margin-bottom: 50px;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    #contactscont{
+      margin-left: 15px;
+    }
+    
+
+      footer{
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      .container {
+        background-color: var(--color-body);
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+        margin-left: 3px;
+        margin-bottom: 5%;
+    }
+ 
+      
+footer{
+  background-color: var(--color-body) ;
+  padding: 1px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+}
+
+  }
+
+    /*landscape for iphone*/
+    @media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (orientation: landscape) {
+
+    .top{
+      height: 10%;
+      width: 85%;
+      font-size: clamp(0.9375rem, 1.028rem + -0.3367vw, 0.8125rem);
+     }
+
+     #Schltxt{
+      text-align: left;
+      font-size: 20px;
+     }
+
+    #schlCard{
+      background-color: var(--color-body);
+      width: 700px;
+      height: 380px;
+      padding-left: 0;
+
+    }
+
+    #column{
+     padding-left: 70px;
+    }
+
+    #desElem{
+      font-size: 120%;
+    }
+    
+    .top{
+      height: 80px;
+    }
+
+    #hobbiesTop{
+      font-size: clamp(0.9375rem, 1.028rem + -0.3367vw, 0.8125rem);
+      padding-right: 0;
+    }
+
+    #ytvid{
+      margin-left: 83px;
+      width: 80%;
+    }
+
+    .container {
+      background-color: var(--color-body);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      margin-left: 5%;
+      margin-bottom: 5%;
+  }
+  }
+
+  /* iPad Pro in portrait mode */
+  @media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .top{
+      height: 90px;
+      width: 85%;
+      
+     }
+
+     #hptxt{
+      font-family: 'Courier New', Courier, monospace;
+      max-width: 50%;
+      width: 20%;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 300px;
+      
+    }
+
+    .hpimgCon{
+      width: 45%; 
+      margin-left: 55%; 
+      position: relative; 
+      
+      
+    }
+    
+    #homepagepic{
+      top: 0;
+      right: 0; 
+      max-width: 200%;
+      height: auto; 
+    }
+  
+     #Schltxt{
+      font-size: 20px;
+      text-align: justify;
+     }
+  
+     #column{
+      padding-left: 25px;
+     }
+  
+     #schlCard{
+      background-color: var(--color-body);
+      width: 600px;
+      height: 380px;
+      margin-left: 90px;
+    }
+  
+     #ytvid{
+      width: 700px;
+     }
+
+     .containerYT{
+      margin-left: 100px;
+     }
+  
+     .top{
+      height: 100px;
+     }
+  
+     #hobbiesTop{
+      font-size: 50px;
+      
+      
+     }
+
+     #dancevid{
+      border: 3px solid white;
+      margin-bottom: 70px;
+      margin-top: 20px;
+      margin-left: 190px;
+      max-width: 100%; 
+      width: 60%;
+    }
+  
+     #contactscont{
+      margin-left: 200px;
+      margin-right: 0;
+     }
+  }
+
+  .container {
+    background-color: var(--color-body);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+  
+
+/* iPad Air in portrait mode */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: portrait) 
+and (-webkit-min-device-pixel-ratio: 2) {
+
+
+
+  .top{
+    height: 90px;
+    width: 85%;
+    
+   }
+
+   #hptxt{
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 50%;
+    width: 20%;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 300px;
+    
+  }
+
+  .hpimgCon{
+    width: 45%; 
+    margin-left: 55%; 
+    position: relative; 
+    
+    
+  }
+  
+  #homepagepic{
+    top: 0;
+    right: 0; 
+    max-width: 200%;
+    height: auto; 
+  }
+
+   #hptop{
+    margin-top: 350px;
+   }
+
+   #Schltxt{
+    font-size: 20px;
+    text-align: justify;
+   }
+
+   #column{
+    padding-left: 25px;
+   }
+
+   #schlCard{
+    background-color: var(--color-body);
+    width: 600px;
+    height: 380px;
+    margin-left: 2px;
+  }
+
+   #ytvid{
+    width: 700px;
+    margin-left: 50px;
+   }
+
+
+   #hobbiesTop{
+    font-size: clamp(0.9375rem, 1.5709rem + -2.3569vw, 0.0625rem);
+    
+   }
+
+   #dancevid{
+    border: 3px solid white;
+    margin-bottom: 70px;
+    margin-top: 20px;
+    margin-left: 150px;
+    max-width: 100%; 
+    width: 60%;
+  }
+
+   #contactscont{
+    margin-left: 250px;
+    margin-right: 0;
+   }
+
+   #contactsLog{
+    font-size: 50px;
+   }
+
+   .goalsImg{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    width: 40%;
+    }
+    
+    .goalsImg img{
+     margin: 0;
+     width: 130%;
+    }
+    
+  #goalsdes{
+    color: var(--color-body);
+    text-align: justify;
+    font-family: 'roboto', sans-serif;
+    font-size: 25px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 0;
+    margin-bottom: 5%;
+  }
+
+  .container {
+    background-color: var(--color-body);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    max-width: 50%;
+    width: 50%;
+    text-align: center;
+   margin-right: 10%;
+    margin-bottom: 5%;
+}
+}
+
+  /* iPad Pro in landscape mode */
+@media only screen 
+and (min-device-width: 1024px) 
+and (max-device-width: 1366px) 
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+  .top{
+    height: 90px;
+    width: 85%;
+    
+   }
+
+   #Schltxt{
+    font-size: 20px;
+    text-align: justify;
+   }
+
+   #column{
+    padding-left: 25px;
+   }
+
+   #schlCard{
+    background-color: var(--color-body);
+    width: 600px;
+    height: 380px;
+    margin-left: 180px;
+  }
+
+   #ytvid{
+    width: 700px;
+    margin-left: 270px;
+   }
+
+   .top{
+    height: 100px;
+   }
+
+   #hobbiesTop{
+    font-size: clamp(0.9375rem, 1.5709rem + -2.3569vw, 0.0625rem);
+    
+   }
+
+   #contactscont{
+    margin-left: 450px;
+    margin-right: 0;
+   }
+
+   #contactsLog{
+    font-size: 50px;
+   }
+
+   
+}
+
+/* iPad Air in landscape mode */
+@media only screen 
+  and (min-width: 1025px) 
+  and (max-width: 1280px) 
+  and (orientation: landscape) {
+     
+    .top{
+      height: 90px;
+      width: 85%;
+      
+     }
+  
+     #Schltxt{
+      font-size: 20px;
+      text-align: justify;
+     }
+  
+     #column{
+      padding-left: 25px;
+     }
+  
+     #schlCard{
+      background-color: var(--color-body);
+      width: 600px;
+      height: 380px;
+      margin-left: 100px;
+    }
+  
+     #ytvid{
+      width: 700px;
+      margin-left: 190px;
+     }
+  
+     .top{
+      height: 100px;
+     }
+  
+     #hobbiesTop{
+      font-size: clamp(0.9375rem, 1.5709rem + -2.3569vw, 0.0625rem);
+      
+     }
+  
+     #contactscont{
+      margin-left: 350px;
+      margin-right: 0;
+     }
+
+     #contactsLog{
+      font-size: 50px;
+     }
+
+  }
+
+  /*css for contact form*/
+  .container {
+    background-color: var(--color-body);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin-left: 30%;
+}
+
+h1 {
+    color: var(--color-second);
+}
+
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--color-second);
+}
+
+input, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    background-color: #e0e0e0;
+}
+
+button {
+    background-color: var(--color-second);
+    color: var(--color-body);
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: green;
+    color: white;
+}
